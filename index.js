@@ -67,12 +67,7 @@ var canmove = {
     down: true,
     left: true
 };
-godsplan = function() {
-if (player.x < ob.x + player.width && player.x + player.width > ob.x && player.y < ob.y + ob.height && player.y + player.height > ob.y) { 
-return false;
-}
-return true; 
-    };
+
 document.onkeydown = e=>key[e.key.toLowerCase()] = e.type = true;
 document.onkeyup = e=>key[e.key.toLowerCase()] = false;
 setInterval(()=>{
