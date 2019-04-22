@@ -38,7 +38,9 @@ function rect(x, y, width, height, color) {
     }
 }
 var collision = (a,b)=>{
-    if (a.x - a.width / 2 < b.x + b.width / 2 && a.x + a.width / 2 > b.x - b.width / 2 && a.y - a.height / 2 < b.y + b.height / 2 && a.y + a.height / 2 > a.y - a.height / 2) {
+    if (a.x - a.width / 2 < b.x + b.width / 2 && a.x + a.width / 2 > b.x - b.width / 2 && a.y - a.height / 2 < b.y + b.height /
+        2 && a.y + a.height / 2 > a.y - a.height / 2) 
+    {
         return true;
     }
     return false;
@@ -91,6 +93,9 @@ var levels = [()=>{
         y_velocity = 0;
         canjump = true;
         player.y = cnvs.height - 32.5
+    } else if (player.y <= 12.5) {
+        player.y = 12.5;
+        y_velocity += 1.5;
     } else {
         y_velocity += 1.5;
     }
