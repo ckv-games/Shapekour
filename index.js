@@ -100,6 +100,10 @@ var levels = [()=>{
         y_velocity += 1.5;
     }
 
+    if (player.x <=ob[1]){
+        player.x = ob[1]
+    }
+        
     if (player.x <= 12.5) {
         player.x = 12.5
     }
