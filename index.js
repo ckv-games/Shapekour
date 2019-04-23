@@ -99,17 +99,15 @@ var levels = [()=>{
     } else {
         y_velocity += 1.5;
     }
-
-    if (player.x <=ob[1]){
-        player.x = ob[1]
-    }
-        
+    
     if (player.x <= 12.5) {
         player.x = 12.5
     }
+    
     if (player.x >= cnvs.width - 12.5) {
         player.x = cnvs.width - 12.5
     }
+    
     ob[0].x = (moveright) ? ob[0].x + 4 : ob[0].x - 4;
     if (ob[0].x >= cnvs.width - 50) {
         moveright = false
