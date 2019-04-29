@@ -45,7 +45,17 @@ var collision = (a,b)=>{
     }
     return false;
 }
-var player = new rect(25,25,25,25,'red');
+function triangle (x1,y1,x2,y2,x3,y3){
+    this.p1x = p1x || 0;
+    this.p2x = p2x || 0;
+    this.p3x = p3x || 0;
+this.p1y = p1y || 0;
+this.p2y = p2y || 0;
+this.p3y = p3y || 0;
+    this.color = color || '#ce0606';
+    
+}
+var player = new rect(25,25,25,25,'#2735a3');
 var ob = [
     new rect(100,180,100,25,'grey'), //moving rect
     new rect(0,50,150,20,'grey'), //top left
