@@ -45,7 +45,7 @@ var collision = (a,b)=>{
     }
     return false;
 }
-function triangle (x1,y1,x2,y2,x3,y3){
+    function triangle (x1,y1,x2,y2,x3,y3){
     this.p1x = p1x || 0;
     this.p2x = p2x || 0;
     this.p3x = p3x || 0;
